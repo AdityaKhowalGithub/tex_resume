@@ -1,0 +1,364 @@
+  %-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[x11names]{xcolor}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Sections formatting
+\titleformat{\customSection}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\customSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textbf{$|$ #2} & #3 #4 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={},  parsep=1pt]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt,, parsep=0pt, itemsep=2pt]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aditya Khowal} \\ \vspace{1pt}
+    \small 425-628-9155 $|$ \href{mailto:akhowal@uw.edu}{\underline{akhowal@uw.edu}} $|$ 
+    \href{https://www.linkedin.com/in/aditya-khowal}{\underline{https://www.linkedin.com/in/aditya-khowal}} $|$
+    \href{https://github.com/AdityaKhowalGithub}{\underline{https://github.com/AdityaKhowalGithub}}
+\end{center}
+
+% \begin{center}
+%     \textbf{\Huge \scshape John Doe} \\ \vspace{1pt}
+%     \small 123456789 $|$ \href{mailto:hello@hello.edu}{\underline{person@uw.edu}} $|$ 
+%     \href{https://www.linkedin.com/in/person}{\underline{https://www.linkedin.com/in/person}} $|$
+%     \href{https://github.com/Person}{\underline{https://github.com/Person}}
+% \end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+  \customSubheading{B.Sc Informatics, Minor: Statistics}{3.8 GPA, 5x deans list}{06/2025 $|$}{\textbf{University of Washington}}
+  \resumeItem{ \textbf{Relevant Classes:} Data Structures \& Algorithms, Data Science, Artificial Intelligence, Search \& Recommendation systems, Database Systems, Front-End development, Algorithms \& Computational Complexity,  IOS Mobile App Dev}
+  \resumeItem{ \textbf{Skills:} 
+  Python, C++, C\#, SQL, Java, Pandas, LaTeX, Golang, Object-oriented Programming, Vim Programmer, NLP, Big Query, Kubernetes, Docker, Git, Swift, Collaboration $|$ \textit{Learning:} Rust}
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \customSubheading{Incoming Software Development Engineer Intern}{Amazon}{June 2024 - September 2024}{}
+  % \vspace{-13pt}
+    \customSubheading{Artificial Intelligence Research Intern}{University of Missouri}{May 2023 – August 2023}{}
+        \resumeItemListStart
+            \resumeItem{Reduced simulated blood waste by \textbf{15\%} by developing a data-driven \textbf{stochastic time series model} in Python to predict blood usage and optimize ordering policy through ML model testing with gurobipy.} 
+            \resumeItem{Achieved \textbf{80\%} confidence in decoding nanopore signals by evaluating data storage techniques and reverse engineering signals using machine learning models like Guppy and Chiron.}
+      \resumeItemListEnd
+    \customSubheading
+      {Software Engineer Intern}{Bond Intelligence/OpenEXA}{June 2021 - September 2022}
+      {Seattle, WA}
+      \resumeItemListStart
+      \resumeItem{Increased user engagement by \textbf{40\%} by developing a full-stack web application in \textbf{Python, React, and Google BigQuery}, providing \textbf{10,000+} clients with user-friendly access to critical municipal bond and finance data.}
+
+\resumeItem{Optimized web app performance by decreasing load times \textbf{70\%} through SQL-based data pre-processing, \textbf{Docker} containerization, and \textbf{Kubernetes} deployment on\textbf{ Google Cloud Platform} for enhanced scalability and security.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      % \vspace{-25pt}
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\textcolor{Coral4}{Monkey lang VM}} $|$ \emph{Rust | Internal System | Assembly }}{In Development}
+\resumeItemListStart
+\resumeItem{Developing a \textbf{language interpreter} for the Monkey lang programming language using \textbf{Rust}, leveraging computer architecture and tiny assembly for optimized bytecode execution with rigorous testing.}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Lisp Interpreter in OCaml} $|$ \emph{OCaml | Compiler Design | Functional Programming}}{In Development}
+% \resumeItemListStart
+% \resumeItem{Developing a \textbf{Lisp interpreter} in OCaml, grounded in the principles of \textbf{functional programming} and \textbf{compiler design}, to execute Lisp programs with support for fundamental operations, boolean logic, and symbol processing.}
+% \resumeItem{Implemented core Lisp functionalities, including \textbf{environment handling}, \textbf{variable bindings}, and \textbf{function definitions}}
+% \resumeItemListEnd
+
+
+
+
+\resumeProjectHeading
+{\textbf{\textcolor{DarkOrchid4}{Husky Hold 'Em }} $|$ \emph{Go | System Design | Docker}}{Winter 2024}
+\resumeItemListStart
+\resumeItem{Developing a poker interface in \textbf{Go}, enabling participants to submit coded bots for scheduled tournaments in the Algorithmic Trading club, with gameplay logic simulated in \textbf{Python and Docker containers }running participants' code.}
+% \resumeItem{Implemented a \textbf{front-end for poker animations}, enhancing the user experience.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\textcolor{DodgerBlue4}{uDub Search}} $|$ \emph{Python | PhP | Natural Language Processing | Collaborative Recommendation}}{January 2024}
+\resumeItemListStart
+\resumeItem{Implemented tokenization, stemming, indexing, and vector representation techniques using Python NLP libraries to develop a \textbf{search and recommendation system} for over \textbf{4,500 posts }on the University of Washington subreddit.}
+\resumeItem{Personalized recommendations by \textbf{integrating a collaborative filtering system} in Python and PHP.}
+\resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Tech Layoff Tracker} $|$ \emph{R | Data Science | ShinyApp}}{Winter 2023}
+% \resumeItemListStart
+% \resumeItem{Identified key layoff trends and generated data-driven insights by developing a comprehensive tech industry layoff tracker and report using R and ShinyApp for a dataset of over \textbf{40,000 rows.}}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Hybrid Recommender Systems for Scholarly Papers} $|$ \emph{Python | TensorFlow | Scikit-learn | NLP}}{Fall 2023}
+% \resumeItemListStart
+% \resumeItem{Conducted self-research on hybrid recommender systems for scholarly papers, \textbf{implementing TF-IDF and Word2Vec models} to extract features from abstracts and calculate cosine similarity for content-based filtering and deep learning recommendations.}
+% \resumeItemListEnd
+
+
+% \resumeProjectHeading
+% {\textbf{PlantCam} $|$ \emph{Swift | Machine Learning | Data Science | Computer Vision}}{Summer 2023}
+% \resumeItemListStart
+% \resumeItem{Developed an iOS mobile app using Swift and CoreML libraries to \textbf{identify plants with 40\% accuracy} by analyzing a large dataset of leaf images with a supervised machine learning model.}
+% \resumeItemListEnd
+\resumeProjectHeading
+{\textbf{\textcolor{OliveDrab4}{NanoGPT Philosopher}} $|$ \emph{Python | PyTorch | Transformers | Language Model}}{Summer 2023}
+\resumeItemListStart
+\resumeItem{Generated philosophical content through training and fine-tuning a \textbf{transformer model} using \textbf{Python, PyTorch}, and a dataset of over \textbf{50,000 pages }from Immanuel Kant's works, achieving an impressive average perplexity score of \textbf{1084} validated by GPTZero.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% %-----------COMMUNITY AND LEADERSHIP-----------
+\section{Community \& Leadership}
+
+\resumeSubHeadingListStart
+
+\customSubheading
+{SWECC Officer - External Head}{Software Engineering Career Club}{August 2023 - Present}
+{}
+\resumeItemListStart
+    \resumeItem{Spearheaded initiatives like LinkedIn workshops and resume reviews, organizing club events, fostering leadership, organization, and communication skills.}
+\resumeItemListEnd
+
+\customSubheading{Teacher Assistant | Front End development }{University of Washington iSchool}{June 2023 - September 2023}{}
+\resumeItemListStart
+\resumeItem{Enhanced learning outcomes for over \textbf{50 students} by teaching front-end development using \textbf{HTML, CSS, JavaScript, and React} to build interactive web applications, while providing valuable assistance through weekly lab sessions and office hours.}
+\resumeItemListEnd
+
+\customSubheading
+{Python Lead}{Stanford 106A}{Jan 2023 - March 2023}
+{}
+\resumeItemListStart
+\resumeItem{Facilitated effective learning for \textbf{10 students} in \textbf{Stanford's} introductory \textbf{CS 106A Python course}, creating engaging lesson content and slides, leading weekly sections, and fostering a supportive learning environment through campfire office hours.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+% \small\textcolor{white}{AWS
+% Ansible
+% Azure
+% cloud infrastructure
+% containerization
+% data warehouse
+% database
+% DevOps
+% distributed system
+% gaming
+% Jenkins
+% Snowflake
+% Terraform}
+
+\end{document}
+%-------------------------------------------
+
+% %-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+%   \customSubheading{Incoming Software Development Engineer Intern}{Amazon}{June 2024 - September 2024}{}
+%   \vspace{5pt}
+%     \customSubheading{Artificial Intelligence Research Intern}{University of Missouri}{May 2023 – August 2023}{}
+%         \resumeItemListStart
+%             \resumeItem{Reduced simulated blood waste by 15\% by developing a data-driven stochastic time series model in Python to predict blood usage and optimize ordering policy through ML model testing with gurobipy.} 
+%             \resumeItem{Achieved 80\% confidence in decoding nanopore signals by evaluating data storage techniques and reverse engineering signals using machine learning models like Guppy and Chiron.}
+%       \resumeItemListEnd
+%     \customSubheading
+%       {Software Engineering Intern}{Bond Intelligence/OpenEXA}{June 2021 - September 2022}
+%       {Seattle, WA}
+%       \resumeItemListStart
+%       \resumeItem{Increased user engagement by 40\% by developing a full-stack web application in Python, React, and Google BigQuery, providing 10,000+ clients with user-friendly access to critical municipal bond data.}
+
+% \resumeItem{Optimized web app performance by decreasing load times 70\% through SQL-based data pre-processing, Docker containerization, and Kubernetes deployment on Google Cloud Platform for enhanced scalability and security.}
+%       \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+% {\textbf{Monkey lang VM} $|$ \emph{Rust | Systems | Assembly }}{In Development}
+% \resumeItemListStart
+% \resumeItem{Devloping a language interpreter for the Monkey lang programming language using Rust, leveraging comprehensive computer architecture and assembly knowledge for optimized bytecode execution and rigorous testing.}
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{uDub Search} $|$ \emph{Python | PhP | Natural Language Processing | Collaborative Recommendation}}{January 2024}
+% \resumeItemListStart
+% \resumeItem{Implemented tokenization, stemming, indexing, and vector representation techniques using Python NLP libraries to develop a search and recommendation system for over 4,500 posts on the University of Washington subreddit.}
+% \resumeItem{Personalized recommendations by integrating a collaborative filtering system in Python and PHP.}
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{Husky Hold 'Em } $|$ \emph{Go | System Design | Docker}}{In Development}
+% \resumeItemListStart
+% \resumeItem{Developing a poker interface in Go, enabling participants to submit coded bots for scheduled tournaments in the Algorithmic Trading club, with gameplay logic simulated in Python and server-side Docker containers running participants' code.}
+% \resumeItem{Implemented a front-end for poker animations, enhancing the user experience.}
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{Tech Layoff Tracker} $|$ \emph{R | Data Science | ShinyApp}}{Winter 2023}
+% \resumeItemListStart
+% \resumeItem{Identified key layoff trends and generated data-driven insights by developing a comprehensive tech industry layoff tracker and report using R and ShinyApp for a dataset of over 40,000 rows.}
+% \resumeItemListEnd
+
+% \resumeProjectHeading
+% {\textbf{Hybrid Recommender Systems for Scholarly Papers} $|$ \emph{Python | TensorFlow | Scikit-learn | NLP}}{Fall 2023}
+% \resumeItemListStart
+% \resumeItem{Conducted self-research on hybrid recommender systems for scholarly papers, implementing TF-IDF and Word2Vec models to extract features from abstracts and calculate cosine similarity for content-based filtering and deep learning recommendations.}
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{PlantCam} $|$ \emph{Swift | Machine Learning | Data Science | Computer Vision}}{Summer 2023}
+% \resumeItemListStart
+% \resumeItem{Developed an iOS mobile app using Swift and CoreML libraries to identify plants with 40\% accuracy by analyzing a large dataset of leaf images with a supervised machine learning model.}
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {\textbf{NanoGPT Philosopher} $|$ \emph{Python | PyTorch | Transformers | Language Model}}{Summer 2023}
+% \resumeItemListStart
+% \resumeItem{Generated philosophical content by forking NanoGPT, training and fine-tuning the model using Python, PyTorch, and a dataset of over 50,000 pages from Immanuel Kant's works, achieving an impressive average perplexity score of 1084 validated by GPTZero.}
+% \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+% % %-----------COMMUNITY AND LEADERSHIP-----------
+% \section{Community \& Leadership}
+
+% \resumeSubHeadingListStart
+
+% \customSubheading
+% {SWECC Officer - External Head}{Software Engineering Career Club}{August 2023 - Present}
+% {}
+% \resumeItemListStart
+%     \resumeItem{Managed \$1500+ budget and spearheaded initiatives like LinkedIn workshops and resume reviews, leading a team through bi-weekly meetings and organizing club events, fostering leadership, organization, and communication skills.}
+% \resumeItemListEnd
+
+% \customSubheading{Teacher Assistant | Front End development }{University of Washington iSchool}{June 2023 - September 2023}{}
+% \resumeItemListStart
+% \resumeItem{Enhanced learning outcomes for over 50 students by teaching front-end development using HTML, CSS, JavaScript, and React to build interactive web applications, while providing valuable assistance through weekly lab sessions and office hours.}
+% \resumeItemListEnd
+
+% \customSubheading
+% {Python Lead}{Stanford 106A}{Jan 2023 - March 2023}
+% {}
+% \resumeItemListStart
+% \resumeItem{Facilitated effective learning for 10 students in Stanford's introductory CS 106A Python course, creating engaging lesson content and slides, leading weekly sections, and fostering a supportive learning environment through campfire office hours.}
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+% %-------------------------------------------
+% \end{document}
+
